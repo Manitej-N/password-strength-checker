@@ -16,5 +16,11 @@ for char in password:
         is_digit = True
     elif char in "!@#$%^&*()_+-=?/.,<>?":
         is_special = True
+#Cases for password strength
 if is_upcase and is_lwcase and is_special and is_digit:
     print("Strong password")
+if is_upcase and is_lwcase and is_special==False and is_digit==False:
+    print("Try a better password")
+if is_upcase==False and is_special==False:
+    print("Weak password")
+
